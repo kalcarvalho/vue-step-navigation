@@ -228,7 +228,6 @@ $nivel = $_REQUEST['nivel'];
 
                     <h4> Enviar os Dados </h4>
 
-
                 </div>
 
 
