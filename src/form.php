@@ -103,7 +103,7 @@ $nivel = $_REQUEST['nivel'];
                         </div>
                         <div class="form-group col-md-3">
                             <label for="telefone">Telefone</label>
-                            <input type="tel" name="telefone" id="telefone" class="form-control" aria-describedby="telefoneHelp" placeholder="Telefone comercial" required="" pattern="^\(d{2}\)d{5}-\d{4}$" title="Digite o telefone no formato (00)00000-0000" maxlength="13" />
+                            <input type="tel" name="telefone" id="telefone" class="form-control" aria-describedby="telefoneHelp" placeholder="Telefone comercial" pattern="^\(d{2}\)d{5}-\d{4}$" title="Digite o telefone no formato (00)00000-0000" maxlength="13" />
                             <small id="paisHelp" class="form-text text-danger"></small>
                         </div>
                     </div>
@@ -199,24 +199,6 @@ $nivel = $_REQUEST['nivel'];
                         <legend class="scheduler-border">Anexo de Arquivos</legend>
                         <div>
                             <label id="parecerCursoPrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="diplomaPrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="historicoPrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="listagemDocentePrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="listagemTecnicoPrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="PlanoCursoPrint" class="labelPrint"></label>
-                        </div>
-                        <div>
-                            <label id="fichaAssinaturaPrint" class="labelPrint"></label>
                         </div>
                     </fieldset>
 

@@ -52,9 +52,7 @@ Vue.component("step", {
 
     methods: {
 
-        enviar() {
-
-            // enviarEmail();
+        submit() {
 
             doSubmit();
 
@@ -266,6 +264,7 @@ Vue.component("step", {
         lastStep() {
 
             this.$emit("step-change", this.currentstep - 1);
+            this.submit();
         }
     }
 });
@@ -316,11 +315,6 @@ new Vue({
     methods: {
         stepChanged(step) {
             this.currentstep = step;
-        },
-
-        doSubmit() {
-            console.log("************************* SUBMIT *************************");
-            console.log($("#requisicaoCadastroForm").serialize());
         }
     }
 });
@@ -601,16 +595,8 @@ $(document).ready(function () {
         return false;
     });
 
-    // createFormAdicionar("fileAto", "Ato da Instituição de Ensino");
-    // createFormAdicionar("fileAutorizacao", "Ato da Autorização do Curso de Enfermagem");
-    // createFormAdicionar("fileDiploma", "Modelo de Diploma");
-    // createFormExcluir("fileAto", "Ato da Instituição de Ensino");
-    // createFormExcluir("fileAutorizacao", "Ato da Autorização do Curso de Enfermagem");
-    // createFormExcluir("fileDiploma", "Modelo de Diploma");
 });
 
 $("#abrir").on("click", function () {
     $("#myModal").modal({ backdrop: 'static' });
-
-
 });
